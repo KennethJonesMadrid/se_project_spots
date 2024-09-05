@@ -1,21 +1,23 @@
-# Project 3: Spots
+# Spots
 
-### Overview  
+## Project Description
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+**Spots** is a web application that features a profile section and a dynamic card layout. The profile section allows users to view and edit their information, with interactive buttons that change on hover. The card layout displays various items with images and buttons, and it adapts to different screen sizes for optimal viewing on both desktop and mobile devices.
+
+## Technologies and Techniques Used
+
+- **HTML**: For structuring the content and creating the layout.
+- **CSS**: For styling and layout adjustments. Utilized Flexbox for the profile section and CSS Grid for the cards layout.
+- **Media Queries**: To ensure the design is responsive and adapts to various screen sizes.
+- **BEM (Block, Element, Modifier)**: For organizing CSS in a modular and maintainable way.
+- **Normalize.css**: To provide consistent styling across different browsers.
+
+## Project Features
+
+- Responsive profile section that adjusts layout based on screen size.
+- Dynamic card grid that adjusts the number of columns based on available screen width.
+- Interactive buttons with hover effects and custom cursors.
+
+## Deployed Project
+
+You can view the deployed project on GitHub Pages using the following link: https://kennethjonesmadrid.github.io/se_project_spots/

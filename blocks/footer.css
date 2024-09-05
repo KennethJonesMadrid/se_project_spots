@@ -1,11 +1,16 @@
 .footer {
   color: rgba(33, 33, 33, 0.7);
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 104px;
-  height: 16px;
-  padding: 60px 668px;
-  white-space: nowrap;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1;
+  padding: 60px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 627px) {
+  .footer {
+    width: 104px;
+    font-size: 16px;
+    line-height: 1;
+  }
 }

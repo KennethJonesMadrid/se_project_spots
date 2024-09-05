@@ -17,10 +17,14 @@
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card__card-button {
   background-image: url(../images/like.svg);
+  background-size: cover;
   background-color: transparent;
   align-self: center;
   width: 23px;
@@ -29,8 +33,21 @@
   border: 2px;
 }
 
+.card__card-button:hover {
+  background-image: url(../images/like-state.svg);
+  cursor: url(../images/pointer.svg), pointer;
+  background-size: cover;
+}
+
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
+  }
+
+  .card__content {
+    font-size: 16px;
+    line-height: 1;
+    gap: 12px 34px;
+  }
   }
 }
