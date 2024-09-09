@@ -21,3 +21,7 @@
 ## Deployed Project
 
 You can view the deployed project on GitHub Pages using the following link: https://kennethjonesmadrid.github.io/se_project_spots/
+
+## Video Walkthrough
+
+You can view my video walkthrough with the explanation for "Spots": https://drive.google.com/file/d/1NE6Y3I_qZaA-m1TBVJYAFXKoA85oPork/view?usp=drive_link
