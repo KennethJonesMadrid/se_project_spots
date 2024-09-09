@@ -14,6 +14,7 @@
   justify-content: space-between;
 }
 .card__title {
+  margin-bottom: 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
@@ -47,7 +48,17 @@
   .card__content {
     font-size: 16px;
     line-height: 1;
-    gap: 12px 34px;
+    gap: 20px;
+  }
+
+  .card__title {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .card__card-button {
+    width: 20px;
+    height: 18px;
   }
   }
 }
