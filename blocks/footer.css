@@ -4,19 +4,19 @@
   font-size: 16px;
   line-height: 1;
   padding: 60px 0;
-  text-align: center;
 }
 
 .footer__copyright {
+  margin: 0 auto;
+  width: 104px;
+  white-space: nowrap;
+  text-align: center;
 }
 
 @media screen and (max-width: 627px) {
   .footer {
-    max-width: 104px;
+    width: 104px;
     font-size: 16px;
     line-height: 1;
-  }
-
-  .footer__copyright {
   }
 }
