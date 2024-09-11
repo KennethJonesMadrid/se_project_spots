@@ -8,15 +8,7 @@
 
 .footer__copyright {
   margin: 0 auto;
-  width: 104px;
+  max-width: 104px;
   white-space: nowrap;
   text-align: center;
-}
-
-@media screen and (max-width: 627px) {
-  .footer {
-    width: 104px;
-    font-size: 16px;
-    line-height: 1;
-  }
 }
