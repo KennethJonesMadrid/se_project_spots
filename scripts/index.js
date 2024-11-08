@@ -35,7 +35,7 @@ const editModalNameInput = editModal.querySelector("#profile-name-input");
 const editModalDescriptionInput = editModal.querySelector(
   "#profile-description-input"
 );
-const closeModalButton = document.querySelector(".modal__close-button");
+const profileCloseButton = document.querySelector(".modal__close-button");
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 
@@ -128,7 +128,7 @@ profileEditButton.addEventListener("click", () => {
   openModal(editModal);
 });
 
-closeModalButton.addEventListener("click", () => {
+profileCloseButton.addEventListener("click", () => {
   closeModal(editModal);
 });
 
