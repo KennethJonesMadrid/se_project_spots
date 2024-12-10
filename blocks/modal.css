@@ -118,7 +118,6 @@
 }
 
 .modal__image {
-  max-width: 80vw;
   max-height: 80vh;
   object-fit: contain;
   border-radius: 8px;
@@ -191,5 +190,22 @@
 
   .modal__close-button_type_preview {
     top: -50px;
+}
 
+@media screen and (max-width: 320px) {
+  .modal__container {
+    max-width: 288px;
+    padding: 16px;
+  }
+
+  .modal__image {
+    width: 288px;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .modal__close-button {
+    top: 8px;
+    right: 8px;
+  }
 }

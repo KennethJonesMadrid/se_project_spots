@@ -139,8 +139,6 @@ function handleAddCardSubmit(evt) {
   };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
-  addCardLinkInput.value = "";
-  addCardNameInput.value = "";
   evt.target.reset();
   disableButton(modalSubmitButton, settings);
   closeModal(addModal);
