@@ -11,7 +11,7 @@
   background-color: rgba(33, 33, 33, 0.5);
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 
 .modal_opened {
@@ -51,6 +51,7 @@
   line-height: 1;
   font-weight: 500;
   max-width: 169px;
+  text-wrap: nowrap;
 }
 
 .modal__form {
@@ -81,13 +82,11 @@
 }
 
 .modal__error {
-  color: #FF0000B2;
+  color: #ff0000b2;
   font-weight: 500;
   font-size: 16px;
   line-height: 17.6px;
 }
-
-
 
 .modal__save-button {
   font-size: 16px;
@@ -105,11 +104,44 @@
   cursor: pointer;
 }
 
+.modal__button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .modal__save-button_disabled {
   background-color: rgba(33, 33, 33, 1);
   opacity: 0.5;
   pointer-events: none;
   cursor: not-allowed;
+}
+
+.modal__save-button--delete {
+  background-color: #ff6565;
+  color: #212121;
+  border-style: none;
+}
+
+.modal__save-button--delete:hover {
+  cursor: pointer;
+  background-color: #ff3333;
+  opacity: 1;
+}
+
+.modal__save-button--cancel {
+  background-color: #fff;
+  color: #212121;
+  border-style: none;
+  border: 1px solid #212121;
+}
+
+.modal__save-button--cancel:hover {
+  cursor: pointer;
+  background-color: #212121;
+  color: #fff;
+  border: 1px solid #212121;
+  opacity: 1;
 }
 
 .modal__content_type_preview {
@@ -159,9 +191,11 @@
   }
 
   .modal__title {
-    margin-bottom: 34px;
+    margin-bottom: 12px;
+    max-width: 276px;
     font-size: 20px;
     line-height: 1;
+    text-wrap: wrap;
   }
 
   .modal__input {
@@ -190,22 +224,44 @@
 
   .modal__close-button_type_preview {
     top: -50px;
-}
-
-@media screen and (max-width: 320px) {
-  .modal__container {
-    max-width: 288px;
-    padding: 16px;
   }
 
-  .modal__image {
-    width: 288px;
-    height: auto;
-    border-radius: 4px;
-  }
+  @media screen and (max-width: 320px) {
+    .modal__container {
+      width: 300px;
+      padding: 16px;
+    }
 
-  .modal__close-button {
-    top: 8px;
-    right: 8px;
+    .modal__image {
+      width: 288px;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .modal__close-button {
+      top: 8px;
+      right: 8px;
+    }
+
+    .modal__button-container {
+      padding-top: 8px;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .modal__close-button_type_preview {
+      top: -50px;
+    }
+
+    .modal__save-button--delete {
+      width: 156px;
+      height: 52px;
+    }
+
+    .modal__save-button--cancel {
+      width: 156px;
+      height: 52px;
+    }
   }
 }
