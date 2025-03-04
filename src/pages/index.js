@@ -77,7 +77,7 @@ api
   .then(([userData, cards]) => {
     profileName.textContent = userData.name;
     profileDescription.textContent = userData.about;
-    document.querySelector(".profile__avatar").src = userData.avatar;
+    profileAvatar.src = userData.avatar;
 
     cards.forEach((item) => {
       const cardElement = getCardElement(item);
